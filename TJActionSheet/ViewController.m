@@ -23,7 +23,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    TJActionSheet *sheet = [TJActionSheet sheetWithTitle:@"确定要退出当前账号吗？" buttonTitles:@[@"确定退出"] redButtonIndex:0 clicked:^(NSInteger buttonIndex) {
+    TJActionSheet *sheet = [TJActionSheet sheetWithTitle:@"请选择您需要的上传方式" buttonTitles:@[@"拍照",@"从手机相册选择"] redButtonIndex:-1 clicked:^(NSInteger buttonIndex) {
         
     }];
     
