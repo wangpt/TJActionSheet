@@ -185,23 +185,7 @@
 }
 
 - (void)didClickCancelBtn {
-    
-    [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        [_darkView setAlpha:0];
-        [_darkView setUserInteractionEnabled:NO];
-        CGRect frame = _bottomView.frame;
-        frame.origin.y += frame.size.height;
-        [_bottomView setFrame:frame];
-        
-    } completion:^(BOOL finished) {
-        
-        if (self.clickedHandle) {
-            __weak typeof(self) weakSelf = self;
-            self.clickedHandle(weakSelf.actionItems.count);
-        }
-        
-        [self removeFromSuperview];
-    }];
+    [self dismiss:nil];
 }
 
 #pragma mark - 显示
