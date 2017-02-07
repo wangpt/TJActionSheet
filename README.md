@@ -1,4 +1,5 @@
 # TJActionSheet
 custom UIActionSheet
 
-![image](https://github.com/Yesi-hoang/TaoBaoTopLine/blob/master/Gif/TaoBaoTopLineGif.gif)
+![image](https://github.com/wangpt/TJActionSheet/blob/master/sheet.gif)
+
